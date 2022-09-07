@@ -16,7 +16,7 @@ def test_setup(request):
     caps["isRealMobile"] = True
     caps['build'] = build
     caps['name'] = test_name
-    driver = webdriver.Remote("https://sakshamagarwal:BObHQ2dZ0snkGSICFlIvcUJKmykOfmqU8CMjHHql4D3aLMfFkO@mobile-hub.lambdatest.com/wd/hub", caps)
+    driver = webdriver.Remote("https://Username:AccessKey@mobile-hub.lambdatest.com/wd/hub", caps)
     request.cls.driver = driver
     
     yield driver
